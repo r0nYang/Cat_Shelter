@@ -1,63 +1,26 @@
-# Cat Shelter
+# Cat Shelter 
 
-## Project Proposal:
-
-What Will the Application do?
-- The application will serve as a cat shelter where users can browse and select cats for adoption. 
-Information such as the breed, name, age, and its availability to be adopted will be provided.
-
-Who will use it?
-- Potential cat owners
-- Anyone interested in cats
-
-Why is this project of interest to you?
-- I am a proud cat owner myself and I believe that every cat deserves a home. Creating a cat shelter 
-application allows me to combine my passion for cats with my interest in software development.
-
-## User Stories:
-
-- As a user, I want to be able to add a cat, along with all its information, to the cat shelter
-- As a user, I want to be able to view the list of cats at the cat shelter
-- As a user, I want to be able to remove a cat from the shelter
-- As a user, I want to be able to select a cat from the list and view all its details, including its breed, 
-name, age, and availability for adoption.
-- As a user, I want to be able to change a pet's availability once it has been adopted.
-- As a user, I want to be able to save the current list of cats in the shelter to file (if I choose to)
-- As a user, I want to be able to load the list of cats from file (if I choose to)
+**Cat Shelter** is a desktop application built using Java Swing that helps manage a list of cats currently available in the shelter. The application allows you to view detailed information about each cat, add new cats to the list, adopt and remove cats from the shelter, and save or load the current list of cats.
 
 
-# Instructions for Grader
 
-- You can generate the first required action related to adding Xs to a Y by entering the name, age, and breed 
-  of cat in the text fields at the bottom then clicking the addCat button.
-- You can generate the second required action related to removing Xs from a Y by selecting a cat on the list and
-  clicking the removeCat button.
-- You can locate my visual component at the start of the program; It is the splash screen.
-- You can save the state of my application by clicking the Save Cats button.
-- You can reload the state of my application by clicking the load Cats button.
+![image](https://github.com/user-attachments/assets/f3c2969f-831c-4c59-9bf0-d995abac4dce)
 
+Youtube Demo [here](https://youtu.be/F3gs_J-6xwc)!
 
-# Phase 4: Task 2
+## Features
 
-- Fri Nov 24 20:21:53 PST 2023
-  Luna has been added to the shelter.
+- **View Information**: See the selected cat's name, age, breed, and adoption status.
+  ![image](https://github.com/user-attachments/assets/b2a06126-267e-4f27-9a76-76f7b1228fe3)
 
-- Fri Nov 24 20:21:53 PST 2023
-  Puma has been added to the shelter.
+  
+- **Adopt Cats**: Adopts the selected cat. The cat’s availability will be updated to indicate it has been adopted.
 
-- Fri Nov 24 20:20:26 PST 2023
-  A potential adopter has requested for Luna's information
+- **Remove Cats**: Deletes the selected cat from the list of cats in the shelter.
 
-- Fri Nov 24 20:20:28 PST 2023
-  Luna has been adopted!
+- **Add Cat**: Adds a new cat to the shelter with the entered name, age, and breed.
 
-- Fri Nov 24 20:20:30 PST 2023
-  Puma has been removed from the shelter.
+- **Save/Load Cats**:
+   - Press "Save Cats" to store the current list of cats.  
+   - Press "Load Cats" to load the saved list when reopening the application.
 
-
-# Phase 4: Task 3
-
-- Looking at the UML class diagram and the code in CatShelterGUI, I noticed that I simply have too much stuff going on
-  in one class; creating panels, labels, buttons, text fields and handling user actions. To improve the cohesion of 
-  CatShelterGUI, I believe I can refactor the user action handling into dedicated classes such that there's a clear
-  separation between the graphical user interface and its applications.
