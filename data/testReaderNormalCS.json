@@ -1,0 +1,14 @@
+{"cats": [
+    {
+        "Availability for adoption": true,
+        "name": "luna",
+        "age": 7,
+        "breed": "Birman"
+    },
+    {
+        "Availability for adoption": false,
+        "name": "puma",
+        "age": 2,
+        "breed": "Ragdoll"
+    }
+]}
